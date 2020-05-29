@@ -26,23 +26,21 @@ class Solution {
 public:
     bool isPowerOfThree(int n) {
         
-        //Solution 1: With Loop
-        /*while(n>1) {
+        //Solution 1: With Loop, Time Complexity: O(n)
+        while(n>1) {
             if(n%3!=0) {
                 return false;
             }
             n = n/3;
         }
+        return (n==1);
         
-        return (n==1);*/
         
-        
-        //Solution 2: Without Loop (1162261467 is the largest integer that is a power of 3 i.e. 3^19)
-        
+        //Solution 2: Without Loop (1162261467 is the largest integer 
+        //that is a power of 3 i.e. 3^19)
         if(n>0 && 1162261467%n == 0) {
             return true;
         }
-        
         return false;
     }
 };

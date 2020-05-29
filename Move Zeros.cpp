@@ -1,5 +1,6 @@
 /*
-Given an array nums, write a function to move all 0's to the end of it while maintaining the relative order of the non-zero elements.
+Given an array nums, write a function to move all 0's to the end of it while 
+maintaining the relative order of the non-zero elements.
 
 Example:
 
@@ -14,6 +15,9 @@ Minimize the total number of operations.
 class Solution {
 public:
     void moveZeroes(vector<int>& nums) {
+
+        //Solution 1: Shift all the non-zero elements to the start
+        //and then add zeros at the end till the size of the array
         int j = 0;
         for(int i=0;i<nums.size();i++) {
             if(nums[i] != 0) {
@@ -24,6 +28,28 @@ public:
         
         while(j < nums.size()) {
             nums[j] = 0;
+            j++;
+        }
+
+
+        //Solution 2: Keep shifting to the back by swapping. Although
+        //swapping is an expensive operation, but for retension of zeros, it
+        //has to be done.
+
+        int i=0,j=1;
+        while(j<nums.size() && i<nums.size()) {
+            if(nums[i] == 0) {
+                
+                if(nums[j] != 0) {
+                    int temp = nums[j];
+                    nums[j] = nums[i];
+                    nums[i] = temp;
+                    i++;
+                } 
+            } 
+            else {
+                i++;
+            }
             j++;
         }
     }

@@ -1,5 +1,6 @@
 /*
-Given an array containing n distinct numbers taken from 0, 1, 2, ..., n, find the one that is missing from the array.
+Given an array containing n distinct numbers taken from 0, 1, 2, ..., n, find the one that 
+is missing from the array.
 
 Example 1:
 
@@ -14,14 +15,16 @@ Output: 8
 class Solution {
 public:
     int missingNumber(vector<int>& nums) {
+
+        //In this case, the SUM method is easier but sometimes the sum might
+        //exceed the integer limit. In that case either use long or if not
+        //then use the XOR method
       
        //SUM METHOD
         int expected_sum = (nums.size()*(nums.size()+1)/2);
         int sum=0;
         for(int i=0;i<nums.size();i++) {
-            if(nums[i] != 0) {
-                sum = sum + nums[i];
-            }
+            sum = sum + nums[i];
         }
         
         //XOR METHOD
@@ -34,8 +37,11 @@ public:
             if(nums[i]!=0) {
                 xor1 = xor1 ^ nums[i];
             }
-        }*/
+        }
         
-        return ( expected_sum-sum);
+        return xor1^expected_xor;
+        */
+        
+        return (expected_sum-sum);
     }
 };

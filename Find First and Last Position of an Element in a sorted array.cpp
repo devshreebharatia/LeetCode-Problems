@@ -1,5 +1,6 @@
 /*
-Given an array of integers nums sorted in ascending order, find the starting and ending position of a given target value.
+Given an array of integers nums sorted in ascending order, find the starting and
+ending position of a given target value.
 
 Your algorithm's runtime complexity must be in the order of O(log n).
 
@@ -17,7 +18,7 @@ Output: [-1,-1]
  */
 
 
- class Solution {
+class Solution {
 public:
     vector<int> searchRange(vector<int>& nums, int target) {
         vector<int>output(2,-1);
@@ -25,6 +26,28 @@ public:
             return output;
         }
         
+        //Solution 1: Simple solution with Time Complexity: O(n)
+        int i = 0;
+        while(i<nums.size()) {
+            if(nums[i] > target) {
+                break;
+            } else if(nums[i] == target){
+
+                //Start Index
+                if(output[0] > i) {
+                    output[0] = i;
+                } 
+                //Last Index
+                else if(output[1] < i) {
+                    output[1] = i;
+                }
+            }
+            i++;
+        }
+
+        //Solution 2: Optimized solution using Binary Search.
+        // Here we are tring to use binary search even for finding the first and
+        // te last occurrence and not just the target element.
         output[0] = binarySearch(nums,target,"First");
         output[1] = binarySearch(nums,target,"Last");
         

@@ -1,7 +1,9 @@
 /*
-Given an array of size n, find the majority element. The majority element is the element that appears more than ⌊ n/2 ⌋ times.
+Given an array of size n, find the majority element. The majority element is the 
+element that appears more than ⌊ n/2 ⌋ times.
 
-You may assume that the array is non-empty and the majority element always exist in the array.
+You may assume that the array is non-empty and the majority element always exist 
+in the array.
 
 Example 1:
 
@@ -19,7 +21,10 @@ public:
         int count = 0;
         int max_element = nums[0];
         
-        //If it is the same element, increment the count, and if a different element decrement the count.Once the count becomes zero, it is an indication that the majority element candidate has changed. At the end, we get the mojority element.
+        //If it is the same element, increment the count, and if a different 
+        //element decrement the count.Once the count becomes zero, it is an 
+        //indication that the majority element candidate has changed. At the end, 
+        //we get the mojority element.
         for(int i=0;i<nums.size();i++) {
             if(max_element == nums[i]) {
                 count++;

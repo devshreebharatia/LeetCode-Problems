@@ -55,7 +55,7 @@ public:
         */
         
         //Third solution uses an array
-         if(s.length() == t.length()) {
+        if(s.length() == t.length()) {
             
               int count[26] = {0};
               for(int i=0;i<s.length();i++) {

@@ -1,9 +1,11 @@
 /*
 Implement int sqrt(int x).
 
-Compute and return the square root of x, where x is guaranteed to be a non-negative integer.
+Compute and return the square root of x, where x is guaranteed to be a non-negative 
+integer.
 
-Since the return type is an integer, the decimal digits are truncated and only the integer part of the result is returned.
+Since the return type is an integer, the decimal digits are truncated and only 
+the integer part of the result is returned.
 
 Example 1:
 
@@ -18,12 +20,13 @@ Explanation: The square root of 8 is 2.82842..., and since
 
  */
 
- class Solution {
+class Solution {
 public:
     int mySqrt(int x) {
     
         long long low = 0,high = x,mid,result;
         
+        //Solution: Use Binary Search for Time Complexity: O(logn)
         while(low<=high) {
             
             mid = (low+high)/2;
@@ -33,6 +36,8 @@ public:
                 high = mid-1;
             } else {
                 low = mid+1;
+                //Very Important: We want only the integer and hence we always 
+                //store this value so that when low>high, we can return the result
                 result = mid;
             }
             
