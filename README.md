@@ -28,10 +28,24 @@ iterator changes. The changes which are common for every iteration,
 must be specified at the end before the loop ends.(Code Optimization)
 
 7. Always try to use XOR for a problem where you have to eliminate numbers that 
-occur twice. This is because XORing the same numbers results in 0. 
+occur twice. This is because XORing the same numbers results in 0. Or to find an 
+element that occurs only once, you can use XOR.
 Basic Working of XOR:
 x^x = 0
 x^0 = x
+
+If suppose there one element that occurs once and the rest twice, XORing all
+the elements of the array will help to obtain that one element.
+Now if suppose there are two elements that occur once and you have to find them,
+then XORing the entire array wont work. In this case, you XOR the entire array
+such that you find a non-zero XOR value.
+Eg: [4,2,3,2,3,1] XORing = 4^1 = 0101 in binary
+Now take any kth bit say bit at 2nd position which is 1 and then make two groups
+a group with elemets that have this bit set and the other that dont.
+Set 1: 4
+Set 2: 2,3,2,3,1
+XORing elments of both sets individually will give you 4 and 1 respectively!!
+
 AND operation helps to obtain carry: because when 1&1 is 1 else all other cases are 0
 
 8. So when the numbers are from 1 to n, its a hint that the problem can be solved
@@ -42,3 +56,14 @@ then using extra time will be the last option to be used.
 
 9. When the position i does not matter you have to use vector.push_back. 
 
+10. SLIDING WINDOW PROBLEM:
+
+Identifying these problems:
+a. Sequential iteration of a data structure
+b. for identifying contiguous sequence of elements(Eg: a subarray)
+c. Usually used with strings, arrays and linked lists
+d. While trying to find min, max, longest subarray, shortest subarray,somethings is contained within a DS.
+
+Two Types of sliding window problems:
+1. static i.e. the size of the window remains the same, which are easy problems
+2. dynamic i.e we have to grow and shrink the size of the sliding window according to the given conditions

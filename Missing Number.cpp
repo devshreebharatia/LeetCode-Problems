@@ -26,9 +26,10 @@ public:
         for(int i=0;i<nums.size();i++) {
             sum = sum + nums[i];
         }
+        return (expected_sum-sum);
         
         //XOR METHOD
-        /*int expected_xor = 0;
+        int expected_xor = 0;
         int xor1 = 0;
         for(int i=1;i<=nums.size();i++) {
             expected_xor = expected_xor ^ i;
@@ -38,10 +39,6 @@ public:
                 xor1 = xor1 ^ nums[i];
             }
         }
-        
         return xor1^expected_xor;
-        */
-        
-        return (expected_sum-sum);
     }
 };
