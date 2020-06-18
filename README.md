@@ -60,7 +60,7 @@ then using extra time will be the last option to be used.
 
 Identifying these problems:
 a. Sequential iteration of a data structure
-b. for identifying contiguous sequence of elements(Eg: a subarray)
+b. For identifying contiguous sequence of elements(Eg: a subarray)
 c. Usually used with strings, arrays and linked lists
 d. While trying to find min, max, longest subarray, shortest subarray,somethings is contained within a DS.
 
