@@ -67,3 +67,18 @@ d. While trying to find min, max, longest subarray, shortest subarray,somethings
 Two Types of sliding window problems:
 1. static i.e. the size of the window remains the same, which are easy problems
 2. dynamic i.e we have to grow and shrink the size of the sliding window according to the given conditions
+
+
+11. Depth First Search and Breadth First Search
+DFS is implemented using stack whereas BFS is implemented using queue
+In DFS: If the current node does not have any child nodes/ the child/adjacent nodes have been visited,
+pop the element. It uses recursion. It is used for problems like reaching a specific goal/ sinking the
+co-ordinate etc. Low memory requirements.
+
+In BFS: If both the child nodes of the current nodes have been enqueued into the queue then dequeue
+the current node. It never uses recursion. It is used for problems like finding shortest path.
+High memory requirements.
+
+Same space and Time complexities for both:
+Space Complexity: O(|V|)
+Time Complexity: O(|V| + |E|)
