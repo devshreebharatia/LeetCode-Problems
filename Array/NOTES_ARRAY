@@ -40,9 +40,6 @@ Two Types of sliding window problems:
 maintain a pointer say "index", which will help you put the elements in the corect position. No
 unneccesary swapping or shifitng is required in this case.
 
-14. If we want to convert a string into integer, there are two ways:
-    a. String is "123", then each character-'0'
-    b. String is "abc", then each character-'a'
 
 8. So when the numbers are from 1 to n, its a hint that the problem can be solved
 in the given time O(n) and without any extra space. Also, when the given data is
