@@ -1,8 +1,0 @@
-Basic Formula for conversion:
-
-If we want to convert a character into integer, there are two ways:
-    a. String is "123", then int ans = '1'-'0'OR '2'-'0' OR '3'-'0' and so on...
-    b. String is "abc", then int ans = 'a'-'a' OR 'b'-'a' OR 'c'-'a' and so on...
-
-If we want to convert an integer into character, there is one way:
-    a. integer is 3 and character is 'b', then char c = 3 + 'a', c will be 'd'...... int ans = 3 + 'a', then ans will be 100, as 'a' ASCII value is 97
