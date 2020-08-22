@@ -1,0 +1,7 @@
+1. Two pointer technique is generally used when the array is sorted.
+
+2. It is also used when you need to traverse from start and end simultaneosly.
+
+3. It is also used when you have a fast runner and a slow runner and you have to define the speed of movement for each of these pointers. 
+
+4. It can be also used for sliding window protocol.

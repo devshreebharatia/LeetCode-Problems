@@ -1,0 +1,152 @@
+Google Interview Questions:
+
+Leetcode 
+
+11. Moving average from data stream
+13. Climbing stairs
+25. Frog jump
+26. Next Closest time
+36. Flip games
+45. Gas station
+
+
+ARRAYS:
+Contains Duplicate
+Contains duplicate- II
+Valid mountain array
+Rotate image
+Flipping an image
+Pascal's triangle
+Plus one
+Majority Element
+Max distance in Arrays
+Find all numbers disappeared in an array
+Kth largest element in an array
+Minimum Domino Rotations for equal row
+Bag of tokens
+Largest values from labels
+Merge Intervals
+
+
+
+TWO POINTER:
+Remove duplicates from sorted arrays
+Container with most water
+Intersection of three sorted arrays
+Boats to save people
+
+
+STRINGS:
+Multiply strings
+Find the difference
+License key formatting
+Longest common prefix
+Detect Capital
+Text justification
+Backspace string compare
+Unique email addresses
+Repeated DNA sequences
+Edit distance
+Sort characters by frequency
+Distinct subsequences
+Shortest way to form string
+Word break
+Interleaving string
+Palindrome partitioning II
+
+
+BINARY SEARCH:
+Median of two sorted arrays
+Search in rotated sorted array
+Find peak element
+
+
+MATH:
+FizzBuzz
+Reverse Integer
+Happy number
+Count primes
+Unique Paths I,II,III
+Greatest common divisor of strings
+
+
+BIT MANIPULATION:
+Single number II
+
+
+LINKED LISTS:
+Reverse linked list
+Sort list
+Insertion sort list
+Merge K sorted lists
+
+
+RECURSION:
+Number of Islands
+Battleships in a board
+Letter combination
+Max area of island
+
+
+DYNAMIC PROGRAMMING:
+House Robber
+
+
+TREE:
+Fruit into basket
+Converted sorted array to binary search tree
+Binary tree level order
+Binary tree longest consecutive sequence
+Delete nodes and return forest
+Maximum depth of binary tree
+Same tree
+
+***************************************************************************************************************************************
+
+Non-leetcode:
+1. First recurring character
+2. 12 men on an island
+3. Find cycle in an array
+4. Universal value tree problem
+5. Max rectangle in a binary matrix
+6. Min jumps array
+7. Regular expression II
+
+
+
+ARRAYS:
+Kth row of pascals triangle
+Merge overlapping intervals
+N/3 Repeat number
+Max non-negative subarray
+wave array
+max min
+
+
+STRINGS:
+Minimum parentheses
+
+
+
+TWO POINTERS:
+3 sum zero
+array 3 pointers
+
+
+
+BIT MANIPULATION:
+Different bits sum pairwise
+
+
+MATH:
+Sum of pairwise hamming distance
+Next smallest palindrome
+
+
+
+BINARY SEARCH:
+Search for a range
+Implement power function
+Allocate books
+Painters partition problem
+

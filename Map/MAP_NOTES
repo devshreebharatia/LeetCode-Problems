@@ -1,0 +1,20 @@
+Two Types of Maps:
+
+   		| map                 | unordered_map
+---------------------------------------------------------
+Ordering        | increasing  order   | no ordering
+                | (by default)        |
+
+Implementation  | Self balancing BST  | Hash Table
+                | like Red-Black Tree |  
+
+search time     | log(n)              | O(1) -> Average 
+                |                     | O(n) -> Worst Case
+
+Insertion time  | log(n) + Rebalance  | Same as search
+                      
+Deletion time   | log(n) + Rebalance  | Same as search
+
+
+NOTE: In case you insert the elements in any order, but you want them to be stored and retrieved in a ordered manner, then use maps.
+Else only for temporary storage purposes always prefer unordered maps.

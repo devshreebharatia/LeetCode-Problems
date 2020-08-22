@@ -1,0 +1,111 @@
+TRICKS:
+
+1. When the time complexity is expected to be o(logn), always use binary search.
+
+2. Time complexity for insertion, deletion, traversal etc for vectors is more
+expensive than arrays. Try to use arrays if possible.
+
+3. Always try to use arrays and vectors instead of hashmaps. Hashmaps are much 
+more expensive. If arrays/vectors cannot be used, then only use maps.
+
+4. Never use swap operations. They are extremely expensive. Always try to 
+overwrite the values. This will make the valid values come at the start of the
+array, and the invalid values at the end. But most problems always want the length
+of the array till the valid values. Hence the rest of the elements do not
+matter.
+
+5. Try to use WHILE loop when you need flexibility in the index movements. If not
+use FOR loop. For maps, use for each loop with an iterator.
+
+6. In a loop always first check the termination condition which is required for making
+iterator changes. The changes which are common for every iteration,
+must be specified at the end before the loop ends.(Code Optimization)
+
+
+7. When the position i does not matter you have to use vector.push_back(). Or else use
+insert();
+
+8. 11.Signed v/s Unsigned:
+Signed variables are the ones that contain negative,0,positive values
+Unsigned variables are the ones that contain only 0,positive values
+
+
+Range:
+1. Integer:
+********** Unsigned: 0 to 2^32-1
+********** Signed:   -2^31-1 to 2^31
+
+2. Character:
+********** Unsigned: 0 to 256
+********** Signed:   -127 to 127
+
+
+9. ASCII VALUES:
+'0'-'9': 48 to 57
+'A'-'Z': 65 to 90
+'a'-'z': 97 to 122
+
+10.  When we are asked to compress arrays, or bring all the non-zero numbers to the start, we must
+maintain a pointer say "index", which will help you put the elements in the corect position. No
+unneccesary swapping or shifitng is required in this case.
+
+
+11. So when the numbers are from 1 to n, its a hint that the problem can be solved
+in the given time O(n) and without any extra space. Also, when the given data is
+sorted, it is of a lot of help. But if neither of these bonuses are available, it
+indicates that you need to use extra space. If in case extra space does not help,
+then using extra time will be the last option left.
+
+
+12. SLIDING WINDOW PROBLEM:
+
+Identifying these problems:
+a. Sequential iteration of a data structure
+b. For identifying contiguous sequence of elements(Eg: a subarray)
+c. Usually used with strings, arrays and linked lists
+d. While trying to find min, max, longest subarray, shortest subarray,somethings is contained within a DS.
+
+Two Types of sliding window problems:
+1. static i.e. the size of the window remains the same, which are easy problems
+2. dynamic i.e we have to grow and shrink the size of the sliding window according to the given conditions
+
+
+13. Sort Function:
+It has two important parameters, start and end. It can also take a third parameter as a function for
+customized sorting. Instead of the function you can also specify greater<int>()
+sort(nums.begin(),nums.end(),fun1)
+
+
+14. Pairs in C++ STL
+Basically pairs are used for associative containers in STL C++.
+Eg: pair<int,int>
+Maps have pairs. We can also create vectors of pairs.
+Eg: vector<pair<int,int>> nums;
+
+
+15. log10(num) will give (the number of digits-1)
+10000 = 10^4....so log(10^4) is 4log10(10) = 4.
+Therefore 4 = number of digits in 10000-1
+
+
+16. XOR OPERATOR(^)
+It is used to invert a number i.e. bit toggling. 0 to 1 and 1 to 0
+
+
+17. AND OPERATOR(&)
+It is used to check whether the given bit is set or unset i.e. 0 or 1
+
+18. Any number is ODD when its last bit is set i.e. in 8421, last bit is set. So bitwise operators can be used to check whether the given number is odd or even
+
+ODD/EVEN CHECK USING XOR
+XOR Operation of the Number by 1 increments the value of the number by 1 if the number is even otherwise it decrements the value of the number by 1 if the value is odd.
+num^1 = num+1 if num was EVEN
+num^1 = num-1 if num was ODD
+
+ODD/EVEN CHECK USING AND
+num&1 = 1 then number is ODD 
+num&1 = 0 then number is EVEN
+
+
+
+

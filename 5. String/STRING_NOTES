@@ -1,0 +1,34 @@
+Basic Formula for conversion:
+
+Basic rule: '0' has ASCII 48, '1' has 49 and so on.....
+Whenever additions or substractions are being done, they will always involve ASCII values if it is a character
+//Character to integer
+   char a = '2';
+   cout<<"\n"<<a+2; 			//50+2 = 52
+   int b = a - '0';			//50-48 = 2
+   cout<<"\n"<<b;			//2
+        
+        
+//Integer to character
+   int c = 2;
+   cout<<"\n"<<c+'2';			//2+52 = 52
+   char d = c + '0';			//2+48 = 50...but its character will be '2'
+   cout<<"\n"<<d;			//'2'
+        
+//String to character			//Only characters can be appended to strings and not integers
+   string s = "";
+   char m = '1';			//'1'
+   s = s + m;
+   cout<<"\n"<<s;			//"1"
+
+
+*** For palindrome sums:
+1. Apply logic for checking both even and odd palindromes
+a. Passing the same index as left and right
+b. Passing adjacent indices as left and right
+2. Contraction from outer to inner OR Expansion from inner to outer
+
+
+
+
+
