@@ -1,4 +1,4 @@
-1. Two pointer technique is generally used when the array is sorted.
+1. Two pointer technique is generally used when the array is SORTED.
 
 2. It is also used when you need to traverse from start and end simultaneosly.
 
