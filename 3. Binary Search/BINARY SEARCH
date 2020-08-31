@@ -1,25 +1,28 @@
 Used for searching an element in logarithmic time inside a SORTED array.
 Time Complexity: 0(logn)
 
-
 Binary Search can take many alternate forms and might not always be as straight forward as searching for a specific value. Sometimes you will have to apply a specific condition or rule to determine which side (left or right) to search next.
 
 When to Use Binary Search????
 
 Binary Search should be considered every time you need to search for an index or element in a collection. If the collection is unordered, we can always sort it first before applying Binary Search.
 
-Templates:
+TEMPLATES:
+
+*************** TEMPLATE 1 *********************************
 
 int binarySearch(vector<int>& nums, int target){
-  if(nums.size() == 0)
-    return -1;
 
   int left = 0, right = nums.size() - 1;
   while(left <= right){
+
     // Prevent (left + right) overflow
     int mid = left + (right - left) / 2;
+
     if(nums[mid] == target){ return mid; }
+
     else if(nums[mid] < target) { left = mid + 1; }
+
     else { right = mid - 1; }
   }
 
@@ -28,47 +31,49 @@ int binarySearch(vector<int>& nums, int target){
 }
 
 
-//POST PROCESSING IS ALSO DONE
+*************** TEMPLATE 2 *********************************
 
 int binarySearch(vector<int>& nums, int target){
-  if(nums.size() == 0)
-    return -1;
 
   int left = 0, right = nums.size();
+
   while(left < right){
+
     // Prevent (left + right) overflow
     int mid = left + (right - left) / 2;
+
     if(nums[mid] == target){ return mid; }
+
     else if(nums[mid] < target) { left = mid + 1; }
+
     else { right = mid; }
   }
 
-  // Post-processing:
   // End Condition: left == right
-  if(left != nums.size() && nums[left] == target) return left;
   return -1;
 }
 
 
-
-
-
-
-
+*************** TEMPLATE 3 *******************************
 
 int binarySearch(vector<int>& nums, int target){
-    if (nums.size() == 0)
-        return -1;
 
     int left = 0, right = nums.size() - 1;
+
     while (left + 1 < right){
+
         // Prevent (left + right) overflow
         int mid = left + (right - left) / 2;
+
         if (nums[mid] == target) {
             return mid;
-        } else if (nums[mid] < target) {
+        } 
+
+	else if (nums[mid] < target) {
             left = mid;
-        } else {
+        } 
+
+	else {
             right = mid;
         }
     }
