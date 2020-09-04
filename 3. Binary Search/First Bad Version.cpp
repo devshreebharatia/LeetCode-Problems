@@ -26,7 +26,7 @@ public:
         int high = n;
         int mid;
         
-        while(1) {
+        while(low<=high) {
             
             mid = low + (high-low)/2;
             
@@ -40,6 +40,6 @@ public:
                 low = mid + 1;
             }
         }
-        return mid;
+        return -1;
     }
 };

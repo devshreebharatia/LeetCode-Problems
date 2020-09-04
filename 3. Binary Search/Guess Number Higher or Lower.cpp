@@ -27,7 +27,7 @@ public:
         long long int high = n;
         long long int mid;
         
-        while(1) {
+        while(low<=high) {
             
             mid = (low+high)/2;
             
@@ -42,6 +42,6 @@ public:
             }
         }
         
-        return mid;
+        return -1;
     }
 };
